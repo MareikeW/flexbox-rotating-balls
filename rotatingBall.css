@@ -1,0 +1,62 @@
+*{
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+h1 {
+  font-family: cambria;
+  font-size: 50px;
+  margin: 30px 0px 30px 0px;
+}
+
+p {
+  font-size: 30px;
+  margin-bottom: 50px;
+}
+
+/* Flex-Container */
+.flex-container{
+  /*makes it a flexbox*/
+  display: flex;
+  height: 200px;
+  /*tells direction*/
+  flex-direction: row;
+  /*aligns the flex items*/
+  justify-content: center;
+  /*aligns the flex items vertically*/
+  align-items: flex-start;
+  /*aligns the rows, here: to the start of the box */
+  align-content: flex-start;
+  /* makes some white space below boxes */
+  margin-bottom: 50px;
+}
+
+.flex-container > div {
+  background-color: #FFFAF0;
+  /* creates visible border */
+  border-style: solid;
+  /* box height & width */
+  height: 200px;
+  width: 200px;
+  /* font-size & padding around elements*/
+  font-size: 30px;
+  padding: 1em;
+  /* creates space between boxes */
+  margin: 50px;
+}
+
+.image {
+  /* centers ball */
+  margin-top: 35px;
+  /* creates rotating animation */
+  animation: rotate 15s linear infinite;
+}
+@keyframes rotate {
+  0%   {transform: rotate(0deg);}
+  25%  {transform: rotate(90deg);}
+  50%  {transform: rotate(180deg);}
+  75%  {transform: rotate(270deg);}
+  100% {transform: rotate(360deg);}
+}
+
